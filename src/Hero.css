@@ -1,0 +1,72 @@
+.hero {
+  height: 100vh;
+  position: relative;
+  object-fit: contain;
+  color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hero-content {
+  display: flex;
+  flex-flow: column;
+  margin-left: 30px;
+  z-index: 1;
+}
+
+.hero-title {
+  font-size: 4.5vw;
+  font-weight: 900;
+  margin-bottom: 15px;
+}
+
+.hero-description {
+  max-width: 390px;
+  padding-top: 20px;
+  font-size: 1.4vw;
+  line-height: 1.618;
+}
+
+.hero-gradient-top {
+  width: 100%;
+  height: 7.4rem;
+  background: linear-gradient(
+    360deg,
+    transparent,
+    rgba(37, 37, 37, 0.618),
+    #111
+  );
+  position: absolute;
+  top: 0;
+}
+
+.hero-gradient-bottom {
+  width: 100%;
+  height: 7.4rem;
+  background: linear-gradient(
+    180deg,
+    transparent,
+    rgba(37, 37, 37, 0.618),
+    #111
+  );
+  position: absolute;
+  bottom: 0;
+}
+
+.hero-button {
+  cursor: pointer;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 0.5rem 2rem;
+  margin-right: 1rem;
+  font-weight: 500;
+  background-color: rgba(51, 51, 51, 0.5);
+}
+
+.hero-button:hover {
+  color: 000;
+  background-color: #e6e6e6;
+  transition: all 0.2s;
+}
