@@ -8,7 +8,7 @@ function Hero() {
 
   useEffect(() => {
     async function fetchData() {
-      const request = await axios.get(requests.fetchNetflixOriginals);
+      const request = await axios.get(requests.fetchActionMovies);
       setMovie(
         request.data.results[
           Math.floor(Math.random() * request.data.results.length - 1)
@@ -32,8 +32,9 @@ function Hero() {
         backgroundPosition: "center center",
       }}
     >
+              <div className="hero-gradient-top"></div>
+
       <div className="hero-content">
-        <div className="hero-gradient-top"></div>
         <h1 className="hero-title">
           {movie?.title || movie?.name || movie?.original_name}
         </h1>

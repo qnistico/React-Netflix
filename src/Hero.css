@@ -11,7 +11,7 @@
 .hero-content {
   display: flex;
   flex-flow: column;
-  margin-left: 30px;
+  margin-left: 65px;
   z-index: 1;
 }
 
@@ -19,6 +19,8 @@
   font-size: 4.5vw;
   font-weight: 900;
   margin-bottom: 15px;
+  text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
+
 }
 
 .hero-description {
@@ -26,6 +28,7 @@
   padding-top: 20px;
   font-size: 1.4vw;
   line-height: 1.618;
+  text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
 }
 
 .hero-gradient-top {
@@ -54,6 +57,10 @@
   bottom: 0;
 }
 
+.hero-buttons {
+  margin-top: 2rem;
+}
+
 .hero-button {
   cursor: pointer;
   color: white;
@@ -66,7 +73,7 @@
 }
 
 .hero-button:hover {
-  color: 000;
+  color: #000;
   background-color: #e6e6e6;
   transition: all 0.2s;
 }
