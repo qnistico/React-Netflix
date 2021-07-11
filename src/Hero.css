@@ -34,7 +34,7 @@
   background: linear-gradient(
     360deg,
     transparent,
-    rgba(37, 37, 37, 0.618),
+    rgba(5, 5, 5, 0.618),
     #111
   );
   position: absolute;
@@ -47,7 +47,7 @@
   background: linear-gradient(
     180deg,
     transparent,
-    rgba(37, 37, 37, 0.618),
+    rgba(16, 16, 16, 0.618),
     #111
   );
   position: absolute;
