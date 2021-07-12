@@ -12,10 +12,11 @@ function ProfilePage() {
     <div className="profile-page">
       <Navbar />
       <div className="profile-page-body">
+      <AccountCircleIcon />
+
         <div className="profile-page-info">
         <h1>Your Profile</h1>
         <div className="avatar-info-flex">
-        <AccountCircleIcon />
       <div className="profile-page-details">
           <h2>{user.email}</h2>
           <div className="profile-page-plans">
@@ -36,6 +37,7 @@ function ProfilePage() {
               <button onClick={() => auth.signOut()} className="sign-out-button">
                   Sign Out
               </button>
+                
               </div>
               </div>
           </div>

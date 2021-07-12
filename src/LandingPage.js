@@ -21,6 +21,7 @@ function LandingPage() {
             <RowItem title="Comedy Movies" fetchUrl={requests.fetchComedyMovies}/>
             <RowItem title="Romance Movies" fetchUrl={requests.fetchRomanceMovies}/>
             <RowItem title="Horror Movies" fetchUrl={requests.fetchHorrorMovies}/>
+            
         </div>
     )
 }

@@ -35,7 +35,7 @@ function RowItem({ title, fetchUrl, isLargeRowItem = false }) {
         )}
 
       </div>
-
+    
     </div>
   );
 }
