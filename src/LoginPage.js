@@ -25,10 +25,12 @@ function LoginPage() {
             
           <h1>Watch your favorite movies or shows at your convenience!</h1>
           <h2>Watch from anywhere.  Cancel any time.</h2>
-          <h3>Ready to get started? Enter your email here.</h3>
+          <h3>Ready to get started? Click the 'Get Started' button to begin.</h3>
 
             <form>
+              {/*
               <input type="email" placeholder="Email" />
+              */}
               <button onClick={() => setSignIn(true)}>Get Started</button>
             </form>
         </div>
