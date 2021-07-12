@@ -3,6 +3,10 @@
     margin-left: 20px;
 }
 
+.row-item h2 {
+    padding: 10px 20px;
+}
+
 .row-images {
     display: flex;
     overflow-y: hidden;
@@ -14,12 +18,22 @@
     display: none;
 }
 
+.card {
+    opacity: 0;
+}
+
+.card:hover {
+    opacity: 1;
+}
+
 .row-image {
     width: 225px;
-    max-height: 125px;
-    margin-right: 10px;
+    max-height: 225px;
+    margin-right: 6.18px;
+    border-radius: 5px;
     object-fit: contain;
     transition: transform 450ms;
+    cursor: pointer;
 }
 
 .row-image:hover {
@@ -34,4 +48,3 @@
     transform: scale(1.09);
     opacity: 1;
 }
-

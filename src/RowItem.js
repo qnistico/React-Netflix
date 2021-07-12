@@ -5,7 +5,7 @@ import axios from "./axios";
 function RowItem({ title, fetchUrl, isLargeRowItem = false }) {
   const [movies, setMovies] = useState([]);
 
-  const base_url = "https://image.tmdb.org/t/p/original/";
+  const base_url = "https://image.tmdb.org/t/p/w500/";
 
   useEffect(() => {
     async function fetchData() {
@@ -25,7 +25,7 @@ function RowItem({ title, fetchUrl, isLargeRowItem = false }) {
             (!isLargeRowItem && movie.backdrop_path)) && (
               <img
                 src={`${base_url}${
-                  isLargeRowItem ? movie.poster_path : movie.backdrop_path
+                  isLargeRowItem ? movie.poster_path : movie.poster_path
                 }`}
                 key={movie.id}
                 alt={movie.name}
@@ -33,7 +33,9 @@ function RowItem({ title, fetchUrl, isLargeRowItem = false }) {
               />
             )
         )}
+
       </div>
+
     </div>
   );
 }

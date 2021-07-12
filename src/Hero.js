@@ -44,6 +44,8 @@ function Hero() {
           <button className="hero-button">Play</button>
           <button className="hero-button">My List</button>
         </div>
+        <h3 className="movie-ratings">Rating: {movie?.vote_average} <span className="movie-votes">Votes:  {movie?.vote_count}</span></h3>
+
       </div>
       <div className="hero-gradient-bottom"></div>
     </header>
