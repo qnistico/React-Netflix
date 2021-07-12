@@ -3,8 +3,10 @@ import React from 'react';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import "./Navbar.css";
+import { useHistory } from "react-router-dom";
 
 function Navbar() {
+    const history = useHistory();
     const [show, handleShow] = useState(false);
 
     const transitionNav = () => {
@@ -28,7 +30,7 @@ function Navbar() {
             <Avatar />
             </div>
             </div>
-        </div>
+            </div>
     )
 }
 

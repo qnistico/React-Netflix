@@ -11,9 +11,11 @@ function LandingPage() {
         <div className="landing-page">
             <Navbar />
             <Hero />
-            <RowItem title="NETFLIX ORIGINALS" fetchUrl={requests.fetchNetflixOriginals}
+            <RowItem title="Top Rated" fetchUrl={requests.fetchTopRated}
             isLargeRowItem/>
+            {/*
             <RowItem title="Top Rated" fetchUrl={requests.fetchTopRated}/>
+            */}
             <RowItem title="Trending" fetchUrl={requests.fetchTrending}/>
             <RowItem title="Action Movies" fetchUrl={requests.fetchActionMovies}/>
             <RowItem title="Comedy Movies" fetchUrl={requests.fetchComedyMovies}/>

@@ -1,5 +1,5 @@
 .hero {
-  height: 100vh;
+  height: 85vh;
   position: relative;
   object-fit: contain;
   color: white;
@@ -16,7 +16,7 @@
 }
 
 .hero-title {
-  font-size: 4.5vw;
+  font-size: 60px;
   font-weight: 900;
   margin-bottom: 15px;
   text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
@@ -25,8 +25,8 @@
 
 .hero-description {
   max-width: 390px;
-  padding-top: 20px;
-  font-size: 1.4vw;
+  padding-top: 10px;
+  font-size: 20px;
   line-height: 1.618;
   text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
 }

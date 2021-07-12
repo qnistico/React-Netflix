@@ -1,0 +1,59 @@
+.signin-page h1 {
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.signin-page-body {
+    max-width: 500px;
+    padding: 70px;
+    background: rgba(0, 0, 0, 0.85);
+    color: white;
+    z-index: 1;
+    position: absolute;
+    top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    left: 0;
+    right: 0;
+    text-align: left;
+}
+
+
+
+.signin-page form {
+    display: flex;
+    flex-flow: column;
+}
+
+.signin-page form input {
+    padding: 10px;
+    outline-width: 0;
+    height: 40px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+.signin-page form button {
+    padding: 16px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    color: white;
+    background-color: #e50914;
+    cursor: pointer;
+    margin-top: 20px;
+    font-weight: 700;
+    border: none;
+}
+
+.signin-page h4 {
+    margin-top: 20px;
+}
+
+.gray {
+    color: gray;
+}
+
+.signup-link {
+    text-decoration: underline;
+}

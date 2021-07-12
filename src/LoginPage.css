@@ -1,0 +1,92 @@
+.login-page {
+  position: relative;
+  height: 100%;
+  background: url(img/signinsignupbg.jpg);
+  background-size: cover;
+  background-position: center center;
+}
+
+.login-page-logo {
+  position: fixed;
+  width: 100px;
+  top: 20px;
+  left: 20px;
+  object-fit: contain;
+}
+
+.login-button {
+  padding: 12px 20px;
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  font-weight: 700;
+}
+
+.login-page-gradient {
+  width: 100%;
+  height: 100vh;
+  z-index: 1;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.8) 100%,
+    rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.8) 100%);
+}
+
+.login-page-body-flex {
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.login-page-body {
+    color: white;
+    padding: 20px;
+    z-index: 1;
+    position: absolute;
+    top: 30%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 750px;
+    left: 0;
+    right: 0;
+}
+
+.login-page-body h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+.login-page-body h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.login-page-body h3 {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+
+
+.login-page-body input {
+    padding: 10px;
+    outline-width: 0;
+    height: 41px;
+    width: 30%;
+    border: none;
+    max-width: 750px;
+}
+
+.login-page-body button {
+    padding: 10px;
+    vertical-align: middle;
+    font-size: 20px;
+    color: white;
+    background-color: #e50914;
+    border: none;
+    font-weight: 700;
+}
