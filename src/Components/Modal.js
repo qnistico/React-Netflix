@@ -1,6 +1,7 @@
 import React from "react";
 import ProfilePage from "../ProfilePage";
 import "./Modal.css";
+import ExitToAppIcon from '@material-ui/icons/ExitToApp';
 
 function Modal({ setOpenModal }) {
   return (
@@ -23,7 +24,7 @@ function Modal({ setOpenModal }) {
             }}
             id="cancelBtn"
           >
-            Back to MovieFlix
+           <ExitToAppIcon /> Back to MovieFlix
           </button>
         </div>
       </div>

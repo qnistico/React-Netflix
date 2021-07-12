@@ -10,7 +10,6 @@ import { login, logout, selectUser } from "./features/counter/userSlice";
 import { auth } from "./firebase";
 import Modal from "./Components/Modal";
 
-
 function Navbar() {
   const history = useHistory();
   const user = useSelector(selectUser);
@@ -41,20 +40,23 @@ function Navbar() {
           alt=""
           className="nav-logo"
         />
-        
-        <div className="App nav-avatar">
-      <button
-        className="openModalBtn"
-        onClick={() => {
-          setModalOpen(true);
-        }}
-      >
-        <AccountCircleIcon />
-        <p>{user.email}</p>
-      </button>
 
-      {modalOpen && <Modal setOpenModal={setModalOpen} />}
-    </div>
+        <div className="App nav-avatar">
+          <button
+            className="openModalBtn"
+            onClick={() => {
+              setModalOpen(true);
+            }}
+          >
+            <AccountCircleIcon />
+            <div className="nav-user-info">
+            <p>Welcome</p>
+            <p>{user.email}</p>
+            </div>
+          </button>
+
+          {modalOpen && <Modal setOpenModal={setModalOpen} />}
+        </div>
         {/*
         <div
           onClick={() => history.push("/ProfilePage")}

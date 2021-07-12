@@ -42,6 +42,10 @@
     align-items: center;
 }
 
+.nav-user-info {
+    text-align: left;
+}
+
 .nav-avatar .MuiSvgIcon-root {
     font-size: 40px;
     margin-right: 10px;

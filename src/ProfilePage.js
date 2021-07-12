@@ -5,6 +5,7 @@ import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 import { useSelector } from "react-redux";
 import { login, logout, selectUser} from "./features/counter/userSlice";
 import { auth } from "./firebase";
+import PersonAddDisabledIcon from '@material-ui/icons/PersonAddDisabled';
 
 function ProfilePage() {
     const user = useSelector(selectUser);
@@ -35,7 +36,7 @@ function ProfilePage() {
             </div>
             
               <button onClick={() => auth.signOut()} className="sign-out-button">
-                  Sign Out
+                  <PersonAddDisabledIcon /> Sign Out
               </button>
                 
               </div>

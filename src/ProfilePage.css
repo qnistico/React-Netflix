@@ -33,9 +33,7 @@
     font-size: 15px;
 }
 
-.profile-page-info .MuiSvgIcon-root {
-    font-size: 125px;
-}
+
 
 .avatar-info-flex {
     display: flex;
@@ -43,8 +41,8 @@
     align-items: center;
 }
 .sign-out-button {
-    padding: 10px 24px;
-    background-color: #3d5afe;
+    height: 48px;
+    background-color: #E50914;
     color: white;
     width: 100%;
     text-align: center;
@@ -54,6 +52,9 @@
     font-size: 20px;
     font-weight: 700;
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .profile-page-plans {
@@ -67,7 +68,7 @@
 
 .profile-page-plan {
     padding: 10px 20px;
-    background-color: #282c2d;
+    background-color: #333;
     margin-bottom: 10px;
     display: flex;
     justify-content: space-between;
