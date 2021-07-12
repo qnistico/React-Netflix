@@ -1,7 +1,7 @@
 .modalBackground {
     width: 100vw;
     height: 100vh;
-    background-color: rgba(0, 0, 0, 0.63);
+    background-color: #111;
     position: fixed;
     display: flex;
     justify-content: center;
@@ -16,10 +16,10 @@
   .modalContainer {
       width: 100%;
       max-width: 1200px;
-    height: 100vh;
+    height: 90vh;
+    margin-bottom: 100px;
     border-radius: 12px;
     background-color: #111;
-    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     display: flex;
     flex-direction: column;
     margin-top: 10%;
@@ -33,7 +33,14 @@
   
   .titleCloseBtn {
     display: flex;
-    justify-content: flex-end;
+    justify-content: flex-start;
+    padding-left: 20px;
+  }
+
+  .titleCloseBtn .MuiSvgIcon-root {
+      color: white;
+      background-color: #E50914;
+      border-radius: 100px;
   }
   
   .titleCloseBtn button {
@@ -54,24 +61,24 @@
   
   .modalContainer .footer {
       width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 920px;
-    margin-left: auto;
-    margin-right: auto;
+      margin-left: 0;
+      margin-right: 0;
+      padding-left: 40px;
+      padding-right: 40px;
+
+      
   }
   
+  
   .modalContainer .footer button {
-    width: 150px;
-    height: 45px;
+      width: 100%;
     border: none;
-    background-color: cornflowerblue;
-    margin-top: 10px;
     color: white;
-    border-radius: 8px;
     font-size: 20px;
+    max-width: 920px;
     cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   #cancelBtn {
@@ -80,11 +87,16 @@
     height: 48px;
     max-width: 920px;
     border-radius: 5px;
+    margin-top: 10px;
     font-weight: 700;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px 20px !important;
+  }
+
+  #cancelBtn .MuiSvgIcon-root {
+      transform: rotate(180deg);
   }
 
   .openModalBtn {
@@ -102,6 +114,10 @@
   .openModalBtn p {
       color: white;
       font-weight: 700;
+  }
+
+  .modal-exit-top-button {
+
   }
 
   

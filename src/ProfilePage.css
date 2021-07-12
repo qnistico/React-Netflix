@@ -12,15 +12,22 @@
     color: white;
     margin-left: auto;
     margin-right: auto;
-    padding: 40px 40px 0 40px;
+    padding: 0px 40px 0 40px;
     max-width: 1000px;
 }
 
 .profile-page-body h1 {
     font-size: 60px;
     font-weight: 500;
-    border-bottom: 1px solid #282c2d;
+    border-bottom: 1px solid #323738;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-page-body h1 .MuiSvgIcon-root {
+    font-size: 75px;
+    margin-right: 15px;
 }
 
 .profile-page-details {
@@ -29,8 +36,9 @@
 
 .profile-page-details h2 {
     background-color: gray;
-    padding: 15px;
+    padding: 15px 25px;
     font-size: 15px;
+    width: fit-content;
 }
 
 

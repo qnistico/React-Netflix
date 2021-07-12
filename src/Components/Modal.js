@@ -2,6 +2,9 @@ import React from "react";
 import ProfilePage from "../ProfilePage";
 import "./Modal.css";
 import ExitToAppIcon from '@material-ui/icons/ExitToApp';
+import CancelIcon from '@material-ui/icons/Cancel';
+import CloseOutlinedIcon from '@material-ui/icons/CloseOutlined';
+
 
 function Modal({ setOpenModal }) {
   return (
@@ -13,7 +16,7 @@ function Modal({ setOpenModal }) {
               setOpenModal(false);
             }}
           >
-            X
+              <CloseOutlinedIcon />
           </button>
         </div>
         <ProfilePage />

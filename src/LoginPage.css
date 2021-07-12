@@ -43,6 +43,7 @@
 
 .login-page-body {
     color: white;
+    background-color: rgba(17, 17, 17, 0.8);
     padding: 40px;
     z-index: 1;
     margin: auto;
@@ -50,7 +51,7 @@
     max-width: 1000px;
     left: 0;
     right: 0;
-    background-color: #111;
+    border-radius: 5px;
 }
 
 .login-page-body h1 {
@@ -60,7 +61,7 @@
 
 .login-page-body h2 {
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 500;
     margin-bottom: 20px;
 }
 
@@ -90,4 +91,5 @@
     border: none;
     cursor: pointer;
     font-weight: 700;
+    border-radius: 5px;
 }
