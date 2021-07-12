@@ -5,13 +5,15 @@ import "./SignInPage.css";
 function SignInPage() {
   const emailRef = useRef(null);
   const passwordRef = useRef(null);
+  const signupEmailRef = useRef(null);
+  const signupPasswordRef = useRef(null);
 
   const register = (e) => {
     e.preventDefault();
     auth
       .createUserWithEmailAndPassword(
-        emailRef.current.value,
-        passwordRef.current.value
+        signupEmailRef.current.value,
+        signupPasswordRef.current.value
       )
       .then((authUser) => {
         console.log(authUser);
@@ -37,20 +39,26 @@ function SignInPage() {
     <div className="signin-page">
       <div className="signin-page-body">
         <form>
-          <h1>Sign In</h1>
+          <h1>Sign <span className="color">In</span></h1>
           <input type="email" ref={emailRef} placeholder="Email" />
           <input type="password" ref={passwordRef} placeholder="Password" />
           <button onClick={signIn} type="submit">
             Sign In
           </button>
-          <h4>
-            <span className="gray">New to MovieFlix?</span>{" "}
-            <span onClick={register} className="signup-link">
-              Sign up here.
-            </span>
-          </h4>
+          
         </form>
+        
       </div>
+      <div className="signin-page-body">
+      <form>
+          <h2>Sign <span className="color">Up</span></h2>
+          <input type="email" ref={signupEmailRef} placeholder="Email" />
+          <input type="password" ref={signupPasswordRef} placeholder="Password" />
+          <button onClick={register} type="submit" className="signup-link">
+            Sign Up
+          </button>
+        </form>
+        </div>
     </div>
   );
 }

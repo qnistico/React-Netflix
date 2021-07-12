@@ -1,23 +1,29 @@
+.signin-page {
+    display: flex;
+}
+
 .signin-page h1,
 .signin-page h2 {
+    font-size: 36px;
     margin-bottom: 20px;
     font-weight: 700;
 }
 
 .signin-page-body {
     max-width: 500px;
-    padding: 70px;
+    width: 400px;;
+    padding: 40px;
     background: rgba(0, 0, 0, 0.85);
     color: white;
     z-index: 1;
-    position: absolute;
-    top: 30%;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    left: 0;
-    right: 0;
+    margin-left: 40px;  
+height: 100%;
+    
     text-align: left;
+}
+
+.color {
+    color: #e50914;
 }
 
 
@@ -47,15 +53,13 @@
     border: none;
 }
 
-.signin-page h4 {
-    margin-top: 20px;
-}
 
-.gray {
-    color: gray;
-}
+
+
 
 .signup-link {
+    padding: 5px 10px;
+    border-radius: 5px;
     cursor: pointer;
-    text-decoration: underline;
+    background-color: #e50914;
 }

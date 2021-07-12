@@ -4,6 +4,8 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import "./Navbar.css";
 import { useHistory } from "react-router-dom";
+import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+
 
 function Navbar() {
     const history = useHistory();
@@ -27,7 +29,7 @@ function Navbar() {
             <div className="nav-content-flex">
             <img src="https://assets.brand.microsites.netflix.io/assets/493f5bba-81a4-11e9-bf79-066b49664af6_cm_1440w.png?v=8" alt="" className="nav-logo"/>
 <div className="nav-avatar">
-            <Avatar />
+    <AccountCircleIcon />
             </div>
             </div>
             </div>
