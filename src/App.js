@@ -14,7 +14,8 @@ import LoginPage from "./LoginPage";
 import { useEffect } from "react";
 import { auth } from "./firebase";
 import { useDispatch, useSelector } from "react-redux";
-import { login, logout, selectUser} from "./features/counter/userSlice";
+import { login, logout, selectUser } from "./features/counter/userSlice";
+import ProfilePage from "./ProfilePage";
 
 function App() {
   const user = useSelector(selectUser);
@@ -31,7 +32,7 @@ function App() {
         );
       } else {
         //Logged out
-        dispatch(logout);
+        dispatch(logout());
       }
     });
     return unsubscribe;
@@ -44,6 +45,9 @@ function App() {
           <LoginPage />
         ) : (
           <Switch>
+            <Route exact path="/ProfilePage">
+              <ProfilePage />
+            </Route>
             <Route exact path="/">
               <LandingPage />
             </Route>

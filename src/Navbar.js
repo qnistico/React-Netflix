@@ -5,10 +5,15 @@ import { useState } from 'react';
 import "./Navbar.css";
 import { useHistory } from "react-router-dom";
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
+import { useSelector } from "react-redux";
+import { login, logout, selectUser} from "./features/counter/userSlice";
+import { auth } from "./firebase";
 
 
 function Navbar() {
     const history = useHistory();
+    const user = useSelector(selectUser);
+
     const [show, handleShow] = useState(false);
 
     const transitionNav = () => {
@@ -27,9 +32,10 @@ function Navbar() {
     return (
         <div className={`nav ${show && "nav-color"}`}>
             <div className="nav-content-flex">
-            <img src="https://assets.brand.microsites.netflix.io/assets/493f5bba-81a4-11e9-bf79-066b49664af6_cm_1440w.png?v=8" alt="" className="nav-logo"/>
-<div className="nav-avatar">
+            <img onClick={() => history.push("/")} src="https://assets.brand.microsites.netflix.io/assets/493f5bba-81a4-11e9-bf79-066b49664af6_cm_1440w.png?v=8" alt="" className="nav-logo"/>
+<div onClick={() => history.push("/ProfilePage")} className="nav-avatar">
     <AccountCircleIcon />
+    <p>{user.email}</p>
             </div>
             </div>
             </div>

@@ -1,0 +1,95 @@
+.profile-page {
+    min-height: 100vh;
+}
+
+.profile-page-body {
+    width: 62%;
+    display: flex;
+    flex-flow: column;
+    background-color: #111;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    padding-top: 8%;
+    max-width: 800px;
+}
+
+.profile-page-body h1 {
+    font-size: 60px;
+    font-weight: 500;
+    border-bottom: 1px solid #282c2d;
+    margin-bottom: 20px;
+}
+
+.profile-page-details {
+    margin-left: 25px;
+    flex: 1;
+}
+
+.profile-page-details h2 {
+    background-color: gray;
+    padding: 15px;
+    font-size: 15px;
+}
+
+.profile-page-info .MuiSvgIcon-root {
+    font-size: 125px;
+}
+
+.avatar-info-flex {
+    display: flex;
+}
+.sign-out-button {
+    padding: 10px 24px;
+    background-color: #3d5afe;
+    color: white;
+    width: 100%;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.profile-page-plans {
+    margin-top: 20px;
+}
+
+.profile-page-plans h3 {
+    border-bottom: 1px solid #282c2d;
+    padding-bottom: 16px;
+}
+
+.profile-page-plan {
+    padding: 10px 20px;
+    background-color: #282c2d;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-page-plan a {
+    color: #e6e6e6;
+    text-decoration: none;
+}
+
+.profile-page-plan a p {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.profile-page-plan button {
+    min-width: 125px;
+    color: white;
+    background-color: #3d5afe;
+    font-weight: 700;
+    border: none;
+    border-radius: 5px;
+    padding: 12px 24px;
+    cursor: pointer;
+}
