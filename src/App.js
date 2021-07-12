@@ -11,9 +11,31 @@ import {
 } from "react-router-dom";
 import { useHistory } from "react-router-dom";
 import LoginPage from "./LoginPage";
+import { useEffect } from "react";
+import { auth } from "./firebase";
+import { useDispatch, useSelector } from "react-redux";
+import { login, logout, selectUser} from "./features/counter/userSlice";
 
 function App() {
-  const user = null;
+  const user = useSelector(selectUser);
+  const dispatch = useDispatch();
+
+  useEffect(() => {
+    const unsubscribe = auth.onAuthStateChanged((userAuth) => {
+      if (userAuth) {
+        dispatch(
+          login({
+            uid: userAuth.uid,
+            email: userAuth.email,
+          })
+        );
+      } else {
+        //Logged out
+        dispatch(logout);
+      }
+    });
+    return unsubscribe;
+  }, []);
   const history = useHistory();
   return (
     <div className="app">
@@ -21,13 +43,11 @@ function App() {
         {!user ? (
           <LoginPage />
         ) : (
-        <Switch>
-          
-          <Route exact path="/">
-            <LandingPage />
-          </Route>
-          
-        </Switch>
+          <Switch>
+            <Route exact path="/">
+              <LandingPage />
+            </Route>
+          </Switch>
         )}
       </Router>
     </div>
