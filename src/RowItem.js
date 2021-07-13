@@ -33,7 +33,7 @@ function RowItem({ title, fetchUrl, isLargeRowItem = false }) {
           
             ((isLargeRowItem && movie.poster_path) ||
             (!isLargeRowItem && movie.backdrop_path)) && (
-<Link to={`/movies/${movie?.title || movie?.name || movie?.original_name}/${movie?.vote_average}/${movie?.overview}`}>
+<Link to={`/movies/${movie?.title || movie?.name || movie?.original_name}/${movie?.vote_average}/${movie?.vote_count}/${movie?.overview}/${movie?.cast}`}>
          <img
                 src={`${base_url}${
                   isLargeRowItem ? movie.poster_path : movie.poster_path

@@ -1,11 +1,25 @@
 .movie-details h1 {
     color: white;
-    font-size: 100px;
+    font-size: 48px;
+    margin-bottom: 20px;
 }
 
 .movie-details p {
     color: white;
     font-size: 20px;
+    margin-bottom: 20px;
+    line-height: 1.618;
+}
+
+.movie-details {
+    width: 1000px;
+    display: flex;
+    flex-flow: column;
+    padding: 20px;
+}
+
+.movie-details-vote-count {
+    margin-left: 20px;
 }
 
 .movie-details-image {

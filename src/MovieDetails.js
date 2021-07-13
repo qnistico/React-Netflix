@@ -13,16 +13,16 @@ import {
   } from "react-router-dom";
   import "./MovieDetails.css";
 function MovieDetails() {
-    let { name, vote_average, overview } = useParams();
+    let { name, vote_average, vote_count, overview, cast} = useParams();
 
     return (
         <div className="movie-details">
             <div>
         <h1>Title: {name}</h1>
-        <p>Votes: {vote_average} </p>
+        <p>Votes: {vote_average} <span className="movie-details-vote-count">Count: {vote_count}</span></p>
         <p>Description: {overview}</p>
+        <p>Cast: {cast}</p>
       </div>
-    );
 
         </div>
     )
