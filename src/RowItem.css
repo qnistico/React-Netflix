@@ -27,7 +27,7 @@
 }
 
 .row-image {
-    width: 225px;
+    width: 125px;
     max-height: 225px;
     margin-right: 6.18px;
     border-radius: 5px;
@@ -42,6 +42,7 @@
 }
 
 .row-image-large {
+    width: 225px;
     max-height: 425px;
 }
 .row-image-large:hover {

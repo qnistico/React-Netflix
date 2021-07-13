@@ -3,6 +3,14 @@ import { useState, useEffect } from "react";
 import "./Hero.css";
 import axios from "./axios";
 import requests from "./Requests";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  useRouteMatch,
+  useParams,
+} from "react-router-dom";
 function Hero() {
   const [movie, setMovie] = useState([]);
 

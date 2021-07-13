@@ -16,6 +16,7 @@ import { auth } from "./firebase";
 import { useDispatch, useSelector } from "react-redux";
 import { login, logout, selectUser } from "./features/counter/userSlice";
 import ProfilePage from "./ProfilePage";
+import MovieDetails from "./MovieDetails";
 
 function App() {
   const user = useSelector(selectUser);
@@ -51,6 +52,7 @@ function App() {
             <Route exact path="/">
               <LandingPage />
             </Route>
+            <Route path="/movies/:name/:vote_average/:overview/" children={<MovieDetails />}></Route>
           </Switch>
         )}
       </Router>
