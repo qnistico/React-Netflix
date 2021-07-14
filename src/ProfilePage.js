@@ -7,11 +7,11 @@ import { login, logout, selectUser } from "./features/counter/userSlice";
 import { auth } from "./firebase";
 import PersonAddDisabledIcon from "@material-ui/icons/PersonAddDisabled";
 
+
 function ProfilePage() {
   const user = useSelector(selectUser);
   return (
     <div className="profile-page">
-      <Navbar />
       <div className="profile-page-body">
         <div className="profile-page-info">
           <h1>

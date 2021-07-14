@@ -1,5 +1,5 @@
 .hero {
-  height: 85vh;
+  height: 100vh;
   position: relative;
   object-fit: contain;
   color: white;
@@ -19,7 +19,7 @@
   font-size: 60px;
   font-weight: 900;
   margin-bottom: 15px;
-  text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
+  text-shadow: 2px 2px 4px rgb(0 0 0 / 100%);
 
 }
 
@@ -28,7 +28,7 @@
   padding-top: 10px;
   font-size: 20px;
   line-height: 1.618;
-  text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
+  text-shadow: 2px 2px 4px rgb(0 0 0 / 100%);
 }
 
 .hero-gradient-top {
@@ -37,7 +37,7 @@
   background: linear-gradient(
     360deg,
     transparent,
-    rgba(5, 5, 5, 0.618),
+    rgba(23, 23, 23, 0.618),
     #111
   );
   position: absolute;
@@ -50,7 +50,7 @@
   background: linear-gradient(
     180deg,
     transparent,
-    rgba(16, 16, 16, 0.618),
+    rgba(23, 23, 23, 0.618),
     #111
   );
   position: absolute;
@@ -85,10 +85,26 @@
 }
 
 .movie-ratings {
-  text-shadow: 2px 2px 4px rgb(0 0 0 / 45%);
+  text-shadow: 2px 2px 4px rgb(0 0 0 / 100%);
 margin-top: 20px;
 }
 
 .movie-votes {
   margin-left: 20px;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-title {
+    font-size: 36px;
+    margin-bottom: 0;
+  }
+  .hero-description {
+    font-size: 16px;
+  }
+  .hero-button {
+    font-size: 16px;
+  }
+  .nav {
+    width: 100%;
+  }
 }

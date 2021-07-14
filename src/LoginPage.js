@@ -3,6 +3,8 @@ import "./LoginPage.css";
 import SignInPage from "./SignInPage";
 import { useHistory } from "react-router-dom";
 import contentimg1 from "./img/content1img.png";
+import mockup from "./img/mockup.png";
+import Footer from "./Footer";
 function LoginPage() {
   const history = useHistory();
     const [signIn, setSignIn] = useState(false);
@@ -36,24 +38,62 @@ function LoginPage() {
             </form>
         </div>
             )}
-            <hr />
             
       </div>
             
     </div>
     <div className="preview-content">
     <div className="preview-content-item">
+      <div className="preview-content-flex">
       <div>
       <h2>Watch on any platform!</h2>
-      <p>Watch on TVs, Playstation, Xbox, Mobile Phones and more.</p>
+      <p>We support all media platforms.  Watch on TVs, Playstation, Xbox, Mobile Phones and more.</p>
+      </div>
+      <div>
+        <img src={mockup} alt="" />
+      </div>
+      </div>
+
+  </div>
+    <div className="preview-content-item">
+      <div className="preview-content-flex-reverse">
+      <div>
+      <h2>Watch on any platform!</h2>
+      <p>We support all media platforms.  Watch on TVs, Playstation, Xbox, Mobile Phones and more.</p>
       </div>
       <div>
         <img src={contentimg1} alt="" />
       </div>
+      </div>
 
   </div>
-  <hr />
+    
+    <div className="preview-content-item">
+      <div className="preview-content-flex">
+      <div>
+      <h2>Watch on any platform!</h2>
+      <p>We support all media platforms.  Watch on TVs, Playstation, Xbox, Mobile Phones and more.</p>
+      </div>
+      <div>
+        <img src={contentimg1} alt="" />
+      </div>
+      </div>
+
+  </div>
+    <div className="preview-content-item">
+      <div className="preview-content-flex-reverse">
+      <div>
+      <h2>Watch on any platform!</h2>
+      <p>We support all media platforms.  Watch on TVs, Playstation, Xbox, Mobile Phones and more.</p>
+      </div>
+      <div>
+        <img src={contentimg1} alt="" />
+      </div>
+      </div>
+
+  </div>
 </div>
+<Footer />
 </div>
   );
 }

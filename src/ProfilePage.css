@@ -1,5 +1,7 @@
 .profile-page {
     background-color: #111;
+    width: 800px;
+    
 }
 
 
@@ -12,8 +14,8 @@
     color: white;
     margin-left: auto;
     margin-right: auto;
-    padding: 0px 40px 0 40px;
     max-width: 1000px;
+    padding: 40px;
 }
 
 .profile-page-body h1 {

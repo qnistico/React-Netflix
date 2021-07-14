@@ -1,0 +1,31 @@
+footer {
+    width: 100%;
+    padding: 60px 0;
+    background-color: #111;
+}
+
+footer h4 {
+    margin-bottom: 20px;
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-evenly;
+    max-width: 1280px;
+    margin: auto;
+}
+
+.footer-item {
+    min-width: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.footer-description {
+    max-width: 350px;
+}
+
+.footer-item h4,
+.footer-item p {
+    color: #757575;
+}

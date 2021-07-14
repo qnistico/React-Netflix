@@ -18,13 +18,7 @@
     display: none;
 }
 
-.card {
-    opacity: 0;
-}
 
-.card:hover {
-    opacity: 1;
-}
 
 .row-image {
     width: 125px;
@@ -32,8 +26,8 @@
     margin-right: 6.18px;
     border-radius: 5px;
     object-fit: contain;
-    transition: transform 450ms;
     cursor: pointer;
+    transition: all 0.45s ease;
 }
 
 .row-image:hover {
