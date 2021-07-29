@@ -52,7 +52,7 @@ function App() {
             <Route exact path="/">
               <LandingPage />
             </Route>
-            <Route path="/movies/:name/:vote_average/:vote_count/:overview/:credits/:release_date" children={<MovieDetails />}></Route>
+            <Route path="/movies/:id" children={<MovieDetails />}></Route>
           </Switch>
         )}
       </Router>

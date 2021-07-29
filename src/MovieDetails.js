@@ -14,18 +14,18 @@ import {
 import "./MovieDetails.css";
 import Navbar from "./Navbar";
 function MovieDetails() {
-  let { name, vote_average, vote_count, overview, credits, cast, release_date } =
+  let { id } =
     useParams();
   const [movie, setMovie] = useState([]);
-
+  const [cast, setCast] = useState([]);
+console.log("this", id);
   useEffect(() => {
     async function fetchData() {
-      const request = await axios.get(requests.fetchTopRated);
-      setMovie(
-        request.data.results[
-          Math.floor(Math.random() * request.data.results.length - 1)
-        ]
-      );
+      const request = await axios.get(requests.fetchById(id));
+      const castrequest = await axios.get(requests.fetchCastById(id));
+      console.log(request);
+      setCast(castrequest.data);
+      setMovie(request.data);
       return request;
     }
     fetchData();
@@ -44,27 +44,30 @@ function MovieDetails() {
               className="movie-details-img"
             />
           <div className="movie-details-content">
-            <h1>Title: {name}</h1>
+            <h1>Title: {movie.name}</h1>
             <div className="movie-details-item">
             <h2>Rating</h2>
             <p>
-               {vote_average}
+               {movie.vote_average}
               <span className="movie-details-vote-count">
-                Count: {vote_count}
+                Count: {movie.vote_count}
               </span>
             </p>
             </div>
             <div className="movie-details-item">
             <h2>Description</h2>
-            <p>{overview}</p>
+            <p>{movie.overview}</p>
             </div>
             <div className="movie-details-item">
             <h2>Cast</h2>
-            <p>{credits} {cast}</p>
-            </div>
+            <p>{cast?.cast?.map(castMember => (
+              <li>{castMember.name}</li>
+            ))}</p>
+                        </div>
+
             <div className="movie-details-item">
             <h2>Release Date</h2>
-            <p>{release_date}</p>
+            <p>{movie.release_date}</p>
             </div>
           </div>
         </div>

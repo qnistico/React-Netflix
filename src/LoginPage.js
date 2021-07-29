@@ -5,6 +5,7 @@ import { useHistory } from "react-router-dom";
 import contentimg1 from "./img/content1img.png";
 import mockup from "./img/mockup.png";
 import Footer from "./Footer";
+import logo from "./img/logo.png";
 function LoginPage() {
   const history = useHistory();
     const [signIn, setSignIn] = useState(false);
@@ -13,7 +14,7 @@ function LoginPage() {
     <div className="login-page">
       <div className="login-page-bg">
         <img
-          src="https://assets.brand.microsites.netflix.io/assets/493f5bba-81a4-11e9-bf79-066b49664af6_cm_1440w.png?v=8"
+          src={logo}
           alt=""
           className="login-page-logo"
         />

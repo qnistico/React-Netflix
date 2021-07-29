@@ -27,36 +27,33 @@ function RowItem({ title, fetchUrl, isLargeRowItem = false }) {
 
   return (
     <div>
-    <div className="row-item">
-      <h2>{title}</h2>
-      <div className="row-images">
-        
-        {movies.map(
-          (movie) =>
-            ((isLargeRowItem && movie.poster_path) ||
-              (!isLargeRowItem && movie.backdrop_path)) && (
+      <div className="row-item">
+        <h2>{title}</h2>
+        <div className="row-images">
+          {movies.map(
+            (movie) =>
+              ((isLargeRowItem && movie.poster_path) ||
+                (!isLargeRowItem && movie.backdrop_path)) && (
                 <div className="row-image-single">
-              <Link
-                to={`/movies/${
-                  movie?.title || movie?.name || movie?.original_name
-                }/${movie?.vote_average}/${movie?.vote_count}/${
-                  movie?.overview
-                }/${movie?.credits || movie?.cast }/${movie?.release_date}`}
-              >
-                <img
-                  src={`${base_url}${
-                    isLargeRowItem ? movie.poster_path : movie.poster_path
-                  }`}
-                  key={movie.id}
-                  alt={movie.name}
-                  className={`row-image ${isLargeRowItem && "row-image-large"}`}
-                />
-              </Link>
-              </div>
-            )
-        )}
+                  <Link
+                    to={`/movies/${movie?.id}`}
+                  >
+                    <img
+                      src={`${base_url}${
+                        isLargeRowItem ? movie.poster_path : movie.poster_path
+                      }`}
+                      key={movie.id}
+                      alt={movie.name}
+                      className={`row-image ${
+                        isLargeRowItem && "row-image-large"
+                      }`}
+                    />
+                  </Link>
+                </div>
+              )
+          )}
+        </div>
       </div>
-    </div>
     </div>
   );
 }
